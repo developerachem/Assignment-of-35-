@@ -1,0 +1,527 @@
+body {
+    font-family: 'Spartan', sans-serif;
+}
+
+.our-main-menu {
+    background-color: #e0e0e0;
+}
+
+.navbar-brand img {
+    width: 80px;
+}
+
+.menu-text li {}
+
+.menu-text li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 15px;
+    color: black;
+    font-weight: 500;
+    position: relative;
+    line-height: 60px;
+}
+
+.menu-text li a::after {
+    content: "";
+    width: 0;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #3763eb;
+    position: absolute;
+    top: 104%;
+    left: 0;
+    transition: .5s;
+}
+
+.menu-text li:hover> ::after {
+    width: 100%;
+}
+
+.menu-text li {
+    position: relative;
+}
+
+.menu-text li ul {
+    position: absolute;
+    top: 200%;
+    left: 0;
+    padding: 0 10px 8px;
+    width: 150px;
+    list-style: none;
+    background: #ddd;
+    border-top: 4px solid #00000070;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    box-shadow: 10px 15px 11px #00000047;
+    z-index: 1111;
+}
+
+.menu-text li ul li {}
+
+.menu-text li ul li a {
+    display: block;
+    line-height: 37px;
+}
+
+.menu-text li:hover>ul {
+    top: 115%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn.btn-css {
+    padding: 12px 30px 10px 30px;
+    background: white;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #3763eb;
+    font-size: 16px;
+    position: relative;
+    z-index: 11;
+    overflow: hidden;
+    box-shadow: 0px 0px 26px #00000047;
+    transition: .5s;
+    border: none;
+}
+
+.btn.btn-css:hover {
+    color: white;
+}
+
+.btn.btn-css::after {
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    z-index: -1;
+    transform: scale(0);
+    transition: 1s;
+}
+
+.btn.btn-css:hover:after {
+    transform: scale(2.3);
+}
+
+.banner-text {
+    height: 550px;
+}
+
+.banner-text-enner h2 {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 65px;
+    margin-bottom: 21px;
+}
+
+.banner-text-enner p {
+    color: #929589;
+    line-height: 31px;
+    margin-bottom: 50px;
+}
+
+.banner-text-enner .btn.btn-css {
+    padding: 20px 40px;
+    font-weight: 600;
+    background: #3763eb;
+    color: white;
+}
+
+.banner-img {
+    overflow: hidden;
+}
+
+.banner-section {}
+
+.banner-img img {
+    width: 680px;
+    position: relative;
+    bottom: 143px;
+    right: -113px;
+    border-radius: 50%;
+    height: 680px;
+}
+
+.heading {
+    width: 600px;
+    margin-top: -50px;
+}
+
+.heading h6 {
+    color: #0074e8;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.heading h2 {
+    font-weight: 600;
+    margin-bottom: 33px;
+    line-height: 47px;
+    position: relative;
+}
+
+.heading h2::after {
+    position: absolute;
+    content: "";
+    bottom: -11px;
+    left: 0;
+    height: 3px;
+    width: 60px;
+    background-color: #0074e8;
+    border-radius: 50px;
+}
+
+.heading p {
+    line-height: 1.7em;
+    margin-bottom: 55px;
+    color: #606060;
+}
+
+.service-section {
+    background: url(https://i.ibb.co/vkB6MrY/service-patern.png) no-repeat bottom left;
+    padding: 50px 0;
+}
+
+.service-item {
+    background-color: #f6f9fc;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 1s;
+    margin-bottom: 65px;
+}
+
+.service-item h3 {
+    font-size: 21px;
+    margin-bottom: 22px;
+    color: #111;
+    line-height: 1.5em;
+    transition: .5s;
+}
+
+.service-item span {
+    background: #0074e8;
+    height: 65px;
+    width: 65px;
+    display: inline-block;
+    text-align: center;
+    line-height: 65px;
+    font-size: 30px;
+    border-radius: 50% 50% 50% 0;
+    margin-bottom: 50px;
+    color: #fff;
+    position: relative;
+    transition: .5s;
+}
+
+.service-item p {
+    color: #606060;
+    line-height: 1.7;
+    margin: 0;
+    transition: .5s;
+}
+
+.service-item span::after {
+    content: "";
+    width: 37px;
+    height: 2px;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    background: #0074e8;
+    transition: .5s;
+}
+
+.service-item:hover {
+    background: #0074e8;
+    transform: scale(1.1);
+}
+
+.service-item:hover.service-item h3 {
+    color: white;
+}
+
+.service-item:hover.service-item span {
+    background: white;
+    color: #0074e8;
+    border-radius: 0% 50% 50% 50%;
+}
+
+.service-item:hover.service-item p {
+    color: white;
+}
+
+.service-item:hover.service-item span::after {
+    background: white;
+    width: 55px;
+}
+
+.d-flex.align-items-center.h-100 {
+    height: 100vh !important;
+}
+
+.video-section {
+    background: url(https://i.ibb.co/k5czhPN/video-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(18, 17, 63, 0.822);
+    color: white;
+    text-align: center;
+}
+
+.d-flex.align-items-center {
+    height: 100vh;
+}
+
+.video-content {
+    width: 550px;
+    margin: auto;
+}
+
+.video-content h6 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.video-content h2 {
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 46px;
+    position: relative;
+}
+
+.video-content h2::after {
+    content: "";
+    width: 67px;
+    height: 4px;
+    border-radius: 50px;
+    position: absolute;
+    left: 241px;
+    bottom: -28px;
+    background: #0074e8;
+}
+
+.video-content p {
+    line-height: 1.7em;
+    margin-bottom: 51px;
+}
+
+.video-content a {
+    font-size: 30px;
+    height: 70px;
+    width: 70px;
+    background: #fff;
+    display: inline-block;
+    color: #0074e8;
+    line-height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    z-index: 111;
+}
+
+.video-content a i {
+    position: relative;
+    top: 4px;
+    left: 3px;
+}
+
+.video-content a .span-1,
+.video-content a .span-2,
+.video-content a .span-3,
+.video-content a .span-4 {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    top: 11%;
+    left: 11%;
+    border-radius: 50%;
+    border: 1px solid red;
+    transition: 3s;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+
+.video-content a .span-2 {
+    animation-delay: .1s;
+}
+
+.video-content a .span-3 {
+    animation-delay: .8s;
+}
+
+.video-content a .span-4 {
+    animation-delay: 1s;
+}
+
+
+
+@keyframes example {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    40% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    80% {
+        opacity: .8;
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* pricing-section */
+.pricing-section {
+    background-color: #f6f9fc;
+}
+
+.procong-heading {}
+
+.procong-heading h5 {
+    font-size: 16px;
+    color: #2186eb;
+    margin-bottom: 18px;
+}
+
+.procong-heading h2 {
+    font-weight: 700;
+    margin-bottom: 36px;
+    position: relative;
+}
+
+.procong-heading h2::after {
+    content: "";
+    width: 81px;
+    height: 3px;
+    background-color: #3763eb !important;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -20px;
+    left: 46%;
+}
+
+.procong-heading p {
+    width: 600px;
+    margin: auto;
+    color: #606060;
+    line-height: 1.7em;
+    margin-bottom: 54px;
+}
+
+.pricing-table {
+    padding: 40px 0;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px #0000001f;
+    transition: .5s;
+}
+
+.pricing-table:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-table strong {
+    font-size: 20px;
+    margin-bottom: 35px;
+    display: inline-block;
+}
+
+.pricing-table h2 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.pricing-table p {
+    color: #606060;
+    position: relative;
+}
+
+.pricing-table p::after {
+    content: "";
+    height: 2px !important;
+    width: 200px !important;
+    position: absolute !important;
+    bottom: -15px !important;
+    left: 77px !important;
+    background-color: transparent;
+    border-radius: 69% !important;
+    border-bottom: 1px solid #00000040 !important;
+}
+
+.pricing-table ul {
+    list-style: none;
+    margin-top: 29px;
+    padding-left: 0;
+}
+
+.pricing-table ul li {
+    margin-bottom: 30px;
+    color: #000000cf;
+}
+
+.pricing-table a {
+    background-color: #2186eb !important;
+    color: #fff !important;
+}
+
+.service-banner-section {
+    background: url(https://i.ibb.co/v34cNRc/free-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    background-blend-mode: overlay;
+    background-color: #0b45f3;
+}
+
+.service-banner-content {}
+
+.service-banner-content .procong-heading {
+    width: 600px;
+}
+
+.service-banner-content .procong-heading h5 {
+    color: white !important;
+    font-weight: 700;
+}
+
+.service-banner-content .procong-heading h2 {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 32px;
+}
+
+.service-banner-content .procong-heading p {
+    color: white;
+}
+
+.service-banner-content .procong-heading h2::after {
+    content: "";
+    width: 81px;
+    height: 3px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -20px;
+    background-color: #fff !important;
+    left: 43%;
+}
