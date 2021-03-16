@@ -525,3 +525,130 @@ body {
     background-color: #fff !important;
     left: 43%;
 }
+
+/* newsletter-section */
+.newsletter-section {
+    background-color: #f6f9fc;
+    padding: 100px 0 !important;
+}
+
+.newsletter-item-left {
+    background-color: #3763eb;
+    padding: 62px 40px;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 10px 10px 17px #00000026;
+}
+
+.newsletter-item-left h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.newsletter-item-left p {
+    width: 330px;
+    line-height: 1.8em;
+    margin-bottom: 32px;
+    font-weight: normal;
+}
+
+.newsletter-form {
+    color: black;
+    font-size: 15px;
+}
+
+.newsletter-form input {
+    border-radius: 50px;
+    padding-left: 36px !important;
+}
+
+.newsletter-form label {
+    margin-left: 12px;
+    color: rgba(0, 0, 0, 0.541);
+}
+
+.newsletter-form button {
+    height: 57px;
+    background-color: transparent !important;
+    color: white !important;
+    border: 2px solid white !important;
+    box-shadow: none !important;
+    font-weight: 600 !important;
+}
+
+.newsletter-item-right {
+    background-color: white;
+    box-shadow: 10px 10px 17px #00000015;
+    padding: 55px 40px;
+    border-radius: 9px;
+}
+
+.newsletter-item-right h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.newsletter-item-right p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.8em;
+    margin: 30px 0;
+    color: #606060;
+}
+
+.newsletter-item-right a {
+    padding: 19px 40px !important;
+    background-color: #3763eb !important;
+    color: white !important;
+}
+
+/* our-busness-section */
+.our-busness-section {
+    padding: 100px 0;
+}
+
+.our-busness-content {}
+
+.our-busness-heading .heading {
+    width: 100%;
+    margin: 0;
+}
+
+.our-busness-heading .heading {}
+
+.our-busness-heading .heading h6 {
+    font-size: 13px;
+}
+
+.our-busness-heading .heading h2 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.our-busness-heading .heading p {}
+
+.our-busness-logo {}
+
+table tr td {
+    border: 1px solid #5959593b;
+    border-collapse: collapse;
+    padding: 32px 15px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+table tr td img {
+    opacity: .5;
+    transition: .5s;
+}
+
+table tr td:hover img {
+    opacity: 1;
+}
+
+table tr td:hover {
+    background-color: rgba(0, 0, 0, 0.055);
+    border: 1px solid #5959593b;
+}
